@@ -10,7 +10,6 @@
 
 
 <script>
-    // add checks for maze being valid -> should go in controller
     var canvas = document.getElementById("maze");
     var ctx = canvas.getContext("2d");
 
@@ -30,20 +29,33 @@
             {
                 var cell = row[j];
 
+                // Draw North
+                x += 100;
                 if (cell.North)
                 {
-                    x += 100;
-                    @Html.Raw($"ctx.lineTo({x}, {y}); ctx.stroke();");
+                    @Html.Raw($"ctx.lineTo({x}, {y});");
+                }
+                else
+                {
+                    @Html.Raw($"ctx.moveTo({x}, {y});");
                 }
 
+                // Draw East
+                y += 100;
                 if (cell.East)
                 {
-                    y += 100;
-                    @Html.Raw($"ctx.lineTo({x}, {y}); ctx.stroke(); ctx.moveTo({x}, {y - 100});");
-                    y -= 100;
+                    @Html.Raw($"ctx.lineTo({x}, {y});");
                 }
+                else
+                {
+                    @Html.Raw($"ctx.moveTo({x}, {y});");
+                }
+                y -= 100;
+                @Html.Raw($"ctx.moveTo({x}, {y});");
             }
         }
+
+        @Html.Raw("ctx.stroke();");
     }
 
 
