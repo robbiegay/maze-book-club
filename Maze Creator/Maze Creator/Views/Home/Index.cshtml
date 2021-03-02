@@ -1,0 +1,25 @@
+﻿@model Maze_Creator.Models.Maze
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h1>Mazes</h1>
+
+
+@for (int i = 0; i < Model.Grid.Count; i++)
+{
+    if (i == 0)
+    {
+        @Html.Raw("-");
+    }
+    else
+    {
+        var row = Model.Grid.ElementAt(i);
+
+        for (int j = 0; j < row.Count; j++)
+        {
+            
+        }
+    }
+}

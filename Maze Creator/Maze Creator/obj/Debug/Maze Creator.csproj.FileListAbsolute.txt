@@ -1,0 +1,79 @@
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\Maze Creator.dll.config
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\Maze Creator.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\Maze Creator.pdb
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\csc.exe
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\csc.exe.config
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\csc.rsp
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\csi.exe
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\csi.exe.config
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\csi.rsp
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.AppContext.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Console.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.IO.Compression.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Net.Http.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.ValueTuple.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\vbc.exe
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\vbc.exe.config
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\vbc.rsp
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\VBCSCompiler.exe
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\Antlr3.Runtime.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\Newtonsoft.Json.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\System.Web.Helpers.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\System.Web.Mvc.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\System.Web.Optimization.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\System.Web.Razor.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\System.Web.WebPages.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\System.Web.WebPages.Razor.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\WebGrease.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\System.Web.Helpers.xml
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\System.Web.Mvc.xml
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\System.Web.Optimization.xml
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\System.Web.Razor.xml
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\System.Web.WebPages.xml
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\System.Web.WebPages.Razor.xml
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\Newtonsoft.Json.xml
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\Antlr3.Runtime.pdb
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\obj\Debug\Maze Creator.csprojAssemblyReference.cache
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\obj\Debug\Maze Creator.csproj.CoreCompileInputs.cache
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\obj\Debug\Maze Creator.csproj.CopyComplete
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\obj\Debug\Maze Creator.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\obj\Debug\Maze Creator.pdb
