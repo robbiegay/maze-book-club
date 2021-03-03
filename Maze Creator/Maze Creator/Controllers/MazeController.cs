@@ -53,8 +53,22 @@ namespace Maze_Creator.Controllers
 
         public ActionResult Sidewinder()
         {
+            ViewBag.Title = "Sidewinder Maze";
+            ViewBag.Message = ""
+                + "<p>Below is my chapter 1 implementation of the 'Sidewinder' maze building algorithm. The algorithm follows these rules:</p>"
+                + "<ol><li>Start in the bottom left cell. Visit each cell only once - traversing each row left to right before moving to the row above and starting again at the left most cell.</li>"
+                + "<li>If the cell visited is the top right cell, do nothing.</li>"
+                + "<li>If the cell visited is in the top row, carve East.</li>"
+                + "<li>For all other cells, a true/false value is generated randomly (coin flip). Like the Binary Tree algorithm, one side of the coin carves East. "
+                + "If the coin lands on the other side OR if the cell is in the far-right row, the algorithm will look back on the consecutive East running cells and pick one cell at random to carve North.</li></ol>"
+                + "<p>The sidewinder maze building algorithm has less bias than the binary tree maze building algorithm. "
+                + "There is no longer a straight, northern passage on the right edge of the maze. Both the binary tree and sidewinder algorithms do have a bias involving a straight eastern row along to top row.</p>"
+                + "<p>This algorithm produces a 'perfect maze' - where each cell can be reached by only one route. There are no loop or intersecting paths.</p>"
+                + "<p>Since each cell is visited only once, this maze building algorithm has a time complexity of O(n) - constant time.</p>"
+                + "<p>The maze is dynamically generated. Refresh the page to load a new page.<p>";
+
             var mazeBuilder = new Sidewinder();
-            var Model = mazeBuilder.BuildMaze(4, 4);
+            var Model = mazeBuilder.BuildMaze(12, 12);
 
             return View("Maze", Model);
         }
