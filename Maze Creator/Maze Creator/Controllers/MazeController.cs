@@ -42,7 +42,7 @@ namespace Maze_Creator.Controllers
                 + "<p>The binary tree maze building algorithm has a bias towards mazes with long corridors on the top and right sides. "
                 + "If starting in the bottom left cell, the solution to the maze trends in a northeastern direction. This bias disappears if starting in the top right.</p>"
                 + "<p>This algorithm produces a 'perfect maze' - where each cell can be reached by only one route. There are no loops or intersecting paths.</p>"
-                + "<p>Since each cell is visited only once, this maze building algorithm has a time complexity of O(n) - constant time.</p>"
+                + "<p>Since each cell is visited only once, this maze building algorithm has a time complexity of O(n) - linear time.</p>"
                 + "<p>The maze is dynamically generated. Refresh the page to generate a new maze.</p>";
 
             var mazeBuilder = new BinaryTree();
@@ -64,7 +64,7 @@ namespace Maze_Creator.Controllers
                 + "<p>The sidewinder maze building algorithm has less bias than the binary tree maze building algorithm. "
                 + "There is no longer a straight, northern passage on the right edge of the maze. Both the binary tree and sidewinder algorithms do have a bias involving a straight eastern row along to top row.</p>"
                 + "<p>This algorithm produces a 'perfect maze' - where each cell can be reached by only one route. There are no loops or intersecting paths.</p>"
-                + "<p>Since each cell is visited only once, this maze building algorithm has a time complexity of O(n) - constant time.</p>"
+                + "<p>Since each cell is visited only once, this maze building algorithm has a time complexity of O(n) - linear time.</p>"
                 + "<p>The maze is dynamically generated. Refresh the page to generate a new maze.</p>";
 
             var mazeBuilder = new Sidewinder();
