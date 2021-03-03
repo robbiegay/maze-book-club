@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Maze_Creator.Interfaces
 {
-    interface MazeBuilder
+    interface IMazeBuilder
     {
         Maze BuildMaze(int length, int width);
     }

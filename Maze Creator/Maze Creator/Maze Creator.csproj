@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\BinaryTree.cs" />
+    <Compile Include="Algorithms\Sidewinder.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -126,7 +127,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\MazeBuilder.cs" />
+    <Compile Include="Interfaces\IMazeBuilder.cs" />
     <Compile Include="Models\Cell.cs" />
     <Compile Include="Models\Maze.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

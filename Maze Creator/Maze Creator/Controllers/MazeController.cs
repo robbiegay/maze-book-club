@@ -53,8 +53,8 @@ namespace Maze_Creator.Controllers
 
         public ActionResult Sidewinder()
         {
-            var mazeBuilder = new BinaryTree();
-            var Model = mazeBuilder.BuildMaze(2, 2);
+            var mazeBuilder = new Sidewinder();
+            var Model = mazeBuilder.BuildMaze(4, 4);
 
             return View("Maze", Model);
         }

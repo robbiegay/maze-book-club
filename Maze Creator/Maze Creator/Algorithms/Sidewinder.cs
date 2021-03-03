@@ -7,7 +7,7 @@ using System.Web;
 
 namespace Maze_Creator.Algorithms
 {
-    public class BinaryTree : IMazeBuilder
+    public class Sidewinder : IMazeBuilder
     {
         public Maze BuildMaze(int length, int width)
         {
@@ -16,6 +16,8 @@ namespace Maze_Creator.Algorithms
 
             for (int i = 0; i < maze.Length; i++)
             {
+                int runStart = 0;
+
                 for (int j = 0; j < maze.Width; j++)
                 {
                     bool flipCoin = rand.NextDouble() >= 0.5;
@@ -24,17 +26,15 @@ namespace Maze_Creator.Algorithms
                     {
                         continue;
                     }
-                    else if (j == maze.Width - 1)
-                    {
-                        maze.Grid[i][j].North = false;
-                    }
                     else if (i == maze.Length - 1)
                     {
                         maze.Grid[i][j].East = false;
                     }
-                    else if (flipCoin)
+                    else if (j == maze.Width - 1 || flipCoin)
                     {
-                        maze.Grid[i][j].North = false;
+                        int x = rand.Next(runStart, j + 1);
+                        maze.Grid[i][x].North = false;
+                        runStart = j + 1;
                     }
                     else if (!flipCoin)
                     {
