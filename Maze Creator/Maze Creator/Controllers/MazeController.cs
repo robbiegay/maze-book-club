@@ -1,4 +1,5 @@
-﻿using Maze_Creator.Models;
+﻿using Maze_Creator.Algorithms;
+using Maze_Creator.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,53 +18,43 @@ namespace Maze_Creator.Controllers
             return View();
         }
 
-        public ActionResult GridMaze()
+        public ActionResult Grid()
         {
             ViewBag.Title = "Grid Maze";
-            ViewBag.Message = "A plain, 4x4 grid. Shows the default state of the Maze Builder - before any North or East walls are carved away.";
+            ViewBag.Message = ""
+                + "<p>A plain, 4x4 grid. Shows the default state of the Maze Builder - before any North or East walls are carved away.</p>";
 
             var Model = new Maze(4, 4);
 
             return View("Maze", Model);
         }
 
-        public ActionResult BinaryTreeMaze()
+        public ActionResult BinaryTree()
         {
             ViewBag.Title = "Binary Tree Maze";
-            ViewBag.Message = "My chapter 1 implementation of the 'Binary Tree' maze building algorithm. The algorithm follow these rules: 1. It starts in the bottom left cell, it moves left to right, then proceeds to the next row. Each cell is visited only once (O(n) - Constant Time). 2. If the cell visited is the top right cell, do nothing. 3. If the cell visited is in the far right row, the only option is to carve North. 4. If the cell visited is in the top row, the only option is the carve East. 5. For all other cells, a coin flip occurs to determine if you should carve North or East.";
+            ViewBag.Message = ""
+                + "<p>Below is my chapter 1 implementation of the 'Binary Tree' maze building algorithm. The algorithm follows these rules:</p>"
+                + "<ol><li>Start in the bottom left cell. Visit each cell only once - traversing each row left to right before moving to the row above and starting again at the left most cell.</li>"
+                + "<li>If the cell visited is the top right cell, do nothing.</li>"
+                + "<li>If the cell visited is in the far-right row, carve North.</li?"
+                + "<li>If the cell visited is in the top row, carve East.</li>"
+                + "<li>For all other cells, a true/false value is generated randomly (coin flip) to determine if you carve North or East.</li></ol>"
+                + "<p>The binary tree maze building algorithm has a bias towards mazes with long corridors on the top and right sides. "
+                + "If starting in the bottom left cell, the solution to the maze trends in a northeastern direction. This bias disappears if starting in the top right.</p>"
+                + "<p>This algorithm produces a 'perfect maze' - where each cell can be reached by only one route. There are no loop or intersecting paths.</p>"
+                + "<p>Since each cell is visited only once, this maze building algorithm has a time complexity of O(n) - constant time.</p>"
+                + "<p>The maze is dynamically generated. Refresh the page to load a new page.<p>";
 
-            var Model = new Maze(4, 4);
-            var rand = new Random();
+            var mazeBuilder = new BinaryTree();
+            var Model = mazeBuilder.BuildMaze(12, 12);
 
-            for (int i = 0; i < Model.Length; i++)
-            {
-                for (int j = 0; j < Model.Width; j++)
-                {
+            return View("Maze", Model);
+        }
 
-                    bool flipCoin = rand.NextDouble() >= 0.5;
-
-                    if (j == Model.Width - 1 && i == Model.Length - 1)
-                    {
-                        continue;
-                    }
-                    else if (j == Model.Width - 1)
-                    {
-                        Model.Grid[i][j].North = false;
-                    }
-                    else if (i == Model.Length - 1)
-                    {
-                        Model.Grid[i][j].East = false;
-                    }
-                    else if (flipCoin)
-                    {
-                        Model.Grid[i][j].North = false;
-                    }
-                    else if (!flipCoin)
-                    {
-                        Model.Grid[i][j].East = false;
-                    }
-                }
-            }
+        public ActionResult Sidewinder()
+        {
+            var mazeBuilder = new BinaryTree();
+            var Model = mazeBuilder.BuildMaze(2, 2);
 
             return View("Maze", Model);
         }
