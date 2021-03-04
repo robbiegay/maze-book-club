@@ -1,0 +1,56 @@
+﻿
+<h2>@ViewData["Title"]</h2>
+
+<div>@Html.Raw(ViewBag.Message)</div>
+
+<canvas id="maze" width=@(Model.Length * 100) height=@(Model.Width * 100) style="border:1px solid #000000;" />
+
+<script>
+    var canvas = document.getElementById("maze");
+    var ctx = canvas.getContext("2d");
+
+    @{
+        int x = 0;
+        int y = Model.Length * 100;
+
+        for (int i = 0; i < Model.Length; i++)
+        {
+            x = 0;
+            y -= 100;
+            @Html.Raw($"ctx.moveTo({x}, {y});");
+
+            var row = Model.Grid[i];
+
+            for (int j = 0; j < Model.Width; j++)
+            {
+                var cell = row[j];
+
+                // Draw North
+                x += 100;
+                if (cell.North)
+                {
+                    @Html.Raw($"ctx.lineTo({x}, {y});");
+                }
+                else
+                {
+                    @Html.Raw($"ctx.moveTo({x}, {y});");
+                }
+
+                // Draw East
+                y += 100;
+                if (cell.East)
+                {
+                    @Html.Raw($"ctx.lineTo({x}, {y});");
+                }
+                else
+                {
+                    @Html.Raw($"ctx.moveTo({x}, {y});");
+                }
+                y -= 100;
+                @Html.Raw($"ctx.moveTo({x}, {y});");
+            }
+        }
+
+        @Html.Raw("ctx.stroke();");
+    }
+</script>
