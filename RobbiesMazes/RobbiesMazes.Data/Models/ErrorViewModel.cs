@@ -1,6 +1,6 @@
 using System;
 
-namespace RobbiesMazes.Models
+namespace RobbiesMazes.Data.Models
 {
     public class ErrorViewModel
     {

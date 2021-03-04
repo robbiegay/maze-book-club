@@ -1,11 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using RobbiesMazes.Models;
-using System;
-using System.Collections.Generic;
+using RobbiesMazes.Data.Models;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace RobbiesMazes.Controllers
 {
@@ -20,6 +16,8 @@ namespace RobbiesMazes.Controllers
 
         public IActionResult Index()
         {
+            ViewData["Title"] = "Robbie's Mazes";
+
             return View();
         }
 
