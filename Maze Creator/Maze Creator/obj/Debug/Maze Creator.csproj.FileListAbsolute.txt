@@ -77,3 +77,6 @@ C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\obj\De
 C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\obj\Debug\Maze Creator.csproj.CopyComplete
 C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\obj\Debug\Maze Creator.dll
 C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\obj\Debug\Maze Creator.pdb
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\Maze Creator.Data.dll
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\Maze Creator.Data.pdb
+C:\Users\Robbie.Gay\source\repos\maze-book-club\Maze Creator\Maze Creator\bin\Maze Creator.Data.dll.config

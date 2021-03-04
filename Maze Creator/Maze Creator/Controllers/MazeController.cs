@@ -1,9 +1,5 @@
-﻿using Maze_Creator.Algorithms;
-using Maze_Creator.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Maze_Creator.Data.Algorithms;
+using Maze_Creator.Data.Models;
 using System.Web.Mvc;
 
 namespace Maze_Creator.Controllers

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Maze_Creator.Models
+﻿namespace Maze_Creator.Data.Models
 {
     public class Cell
     {

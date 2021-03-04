@@ -117,8 +117,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Algorithms\BinaryTree.cs" />
-    <Compile Include="Algorithms\Sidewinder.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -127,9 +125,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\IMazeBuilder.cs" />
-    <Compile Include="Models\Cell.cs" />
-    <Compile Include="Models\Maze.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -186,6 +181,12 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Maze Creator.Data\Maze Creator.Data.csproj">
+      <Project>{435dad78-0a1a-48dd-8936-01dbfeb82306}</Project>
+      <Name>Maze Creator.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
