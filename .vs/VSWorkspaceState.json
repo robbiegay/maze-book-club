@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Maze Creator",
-    "\\Maze Creator\\Maze Creator",
-    "\\Maze Creator\\Maze Creator\\bin",
-    "\\Maze Creator\\Maze Creator\\bin\\app.publish"
+    ""
   ],
-  "SelectedNode": "\\Maze Creator\\Maze Creator.sln",
+  "SelectedNode": "\\RobbiesMazes.Web",
   "PreviewInSolutionExplorer": false
 }
