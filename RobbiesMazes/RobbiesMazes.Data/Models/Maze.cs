@@ -29,23 +29,6 @@ namespace RobbiesMazes.Data.Models
             }
 
             Grid = grid;
-
-            // test data
-            // Test path
-            var p1 = Direction.East;
-            var p2 = Direction.North;
-            var p3 = Direction.West;
-            var p4 = Direction.North;
-            var p5 = Direction.South;
-
-            Solution = new List<Direction>()
-            {
-                p1,
-                p2,
-                p3,
-                p4,
-                p5
-            };
         }
     }
 }

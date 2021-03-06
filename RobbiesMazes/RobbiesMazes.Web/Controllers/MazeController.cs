@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RobbiesMazes.Data.Algorithms;
 using RobbiesMazes.Data.Models;
+using RobbiesMazes.Data.Services;
 
 namespace RobbiesMazes.Web.Controllers
 {
@@ -42,6 +43,8 @@ namespace RobbiesMazes.Web.Controllers
 
             var mazeBuilder = new BinaryTree();
             var Model = mazeBuilder.BuildMaze(12, 12);
+            var mazeSolver = new MazeSolver();
+            Model.Solution = mazeSolver.Solve(Model);
 
             return View("Maze", Model);
         }
