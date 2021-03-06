@@ -27,14 +27,6 @@
                 {
                     case (Direction.North):
                         solutionY -= cellWidth;
-                        //for (int j = 0; j < cellWidth; j += 5)
-                        //{
-                        //@Html.Raw("ctx.beginPath();");
-                        //solutionY -= 5;
-                        //@Html.Raw($"ctx.lineTo({solutionX}, {solutionY});");
-                        // @Html.Raw("ctx.stroke();");
-                        //@Html.Raw("setTimeout(() => {  console.log(\"World!\"); }, 100);");
-                        //}
                         break;
                     case (Direction.East):
                         solutionX += cellWidth;
@@ -54,7 +46,11 @@
     }
 </script>
 
-<button onclick="solveMaze()">Solve Maze</button>
+<div class="d-flex justify-content-center">
+    <button type="button" class="btn btn-primary" align="center" onclick="solveMaze()">Solve Maze</button>
+</div>
+
+<br />
 
 <canvas id="maze" width=@(Model.Length * 100) height=@(Model.Width * 100) style="border:1px solid #000000;" />
 

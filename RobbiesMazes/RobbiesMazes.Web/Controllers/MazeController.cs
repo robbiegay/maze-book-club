@@ -2,6 +2,7 @@
 using RobbiesMazes.Data.Algorithms;
 using RobbiesMazes.Data.Models;
 using RobbiesMazes.Data.Services;
+using System.Collections.Generic;
 
 namespace RobbiesMazes.Web.Controllers
 {
@@ -21,6 +22,7 @@ namespace RobbiesMazes.Web.Controllers
                 + "<p>A plain, 4x4 grid. Shows the default state of the Maze Builder - before any North or East walls are carved away.</p>";
 
             var Model = new Maze(4, 4);
+            Model.Solution = new List<Direction>();
 
             return View("Maze", Model);
         }
@@ -67,6 +69,8 @@ namespace RobbiesMazes.Web.Controllers
 
             var mazeBuilder = new Sidewinder();
             var Model = mazeBuilder.BuildMaze(12, 12);
+            var mazeSolver = new MazeSolver();
+            Model.Solution = mazeSolver.Solve(Model);
 
             return View("Maze", Model);
         }
