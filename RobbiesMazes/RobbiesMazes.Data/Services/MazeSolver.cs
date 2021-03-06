@@ -20,7 +20,9 @@ namespace RobbiesMazes.Data.Services
             int row = 0;
             int column = 0;
 
-            for (int i = 0; i < 100; i++)
+            bool mazeSolved = false;
+
+            while (!mazeSolved)
             {
                 switch (forward)
                 {
@@ -59,6 +61,9 @@ namespace RobbiesMazes.Data.Services
                     TurnLeft(ref left, ref forward, ref right);
                     Move(ref path, ref forward, ref row, ref column);
                 }
+
+                if (row == maze.Length - 1 && column == maze.Width - 1)
+                    mazeSolved = true;
             }
 
             return path;
