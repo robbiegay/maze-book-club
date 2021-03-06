@@ -3,6 +3,59 @@
 
 <div>@Html.Raw(ViewBag.Message)</div>
 
+<script>
+    function solveMaze() {
+        var canvas = document.getElementById("maze");
+        var ctx = canvas.getContext("2d");
+        ctx.beginPath();
+
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = "#FF0000";
+
+        @{
+            int cellWidth = 100;
+
+            int solutionX = 50;
+            int solutionY = (Model.Length * cellWidth) - 50;
+            @Html.Raw($"ctx.moveTo({solutionX}, {solutionY});");
+
+            for (int i = 0; i < Model.Solution.Count; i++)
+            {
+                var nextCell = Model.Solution[i];
+
+                switch (nextCell)
+                {
+                    case (Direction.North):
+                        solutionY -= cellWidth;
+                        //for (int j = 0; j < cellWidth; j += 5)
+                        //{
+                        //@Html.Raw("ctx.beginPath();");
+                        //solutionY -= 5;
+                        //@Html.Raw($"ctx.lineTo({solutionX}, {solutionY});");
+                        // @Html.Raw("ctx.stroke();");
+                        //@Html.Raw("setTimeout(() => {  console.log(\"World!\"); }, 100);");
+                        //}
+                        break;
+                    case (Direction.East):
+                        solutionX += cellWidth;
+                        break;
+                    case (Direction.South):
+                        solutionY += cellWidth;
+                        break;
+                    case (Direction.West):
+                        solutionX -= cellWidth;
+                        break;
+                }
+
+                @Html.Raw($"ctx.lineTo({solutionX}, {solutionY});");
+                @Html.Raw("ctx.stroke();");
+            }
+        }
+    }
+</script>
+
+<button onclick="solveMaze()">Solve Maze</button>
+
 <canvas id="maze" width=@(Model.Length * 100) height=@(Model.Width * 100) style="border:1px solid #000000;" />
 
 <script>
@@ -54,3 +107,5 @@
         @Html.Raw("ctx.stroke();");
     }
 </script>
+
+

@@ -16,9 +16,6 @@ namespace RobbiesMazes.Data.Services
             Person = person;
         }
 
-        public Direction FindPath()
-        {
-
-        }
+        
     }
 }

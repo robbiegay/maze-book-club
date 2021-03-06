@@ -7,6 +7,7 @@ namespace RobbiesMazes.Data.Models
         public int Length { get; set; }
         public int Width { get; set; }
         public List<List<Cell>> Grid { get; set; }
+        public List<Direction> Solution { get; set; }
 
         public Maze(int length, int width)
         {
@@ -28,6 +29,23 @@ namespace RobbiesMazes.Data.Models
             }
 
             Grid = grid;
+
+            // test data
+            // Test path
+            var p1 = Direction.East;
+            var p2 = Direction.North;
+            var p3 = Direction.West;
+            var p4 = Direction.North;
+            var p5 = Direction.South;
+
+            Solution = new List<Direction>()
+            {
+                p1,
+                p2,
+                p3,
+                p4,
+                p5
+            };
         }
     }
 }
