@@ -1,0 +1,120 @@
+﻿
+<h2>@ViewData["Title"]</h2>
+
+<div>@Html.Raw(ViewBag.Message)</div>
+
+<script>
+    function solveMaze() {
+        var canvas = document.getElementById("maze");
+        var ctx = canvas.getContext("2d");
+        ctx.beginPath();
+
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = "#FF0000";
+
+        @{
+            int cellWidth = 100;
+
+            int solutionX = 50;
+            int solutionY = (Model.Length * cellWidth) - 50;
+            @Html.Raw($"ctx.moveTo({solutionX}, {solutionY});");
+
+            for (int i = 0; i < Model.Solution.Count; i++)
+            {
+                var nextCell = Model.Solution[i];
+
+                switch (nextCell)
+                {
+                    case (Direction.North):
+                        solutionY -= cellWidth;
+                        break;
+                    case (Direction.East):
+                        solutionX += cellWidth;
+                        break;
+                    case (Direction.South):
+                        solutionY += cellWidth;
+                        break;
+                    case (Direction.West):
+                        solutionX -= cellWidth;
+                        break;
+                }
+
+                @Html.Raw($"ctx.lineTo({solutionX}, {solutionY});");
+                @Html.Raw("ctx.stroke();");
+            }
+        }
+
+        // Make timeToSolve visible by overriding 'd-none' class
+        document.getElementById("timeToSolve").className = "";
+    }
+</script>
+
+<div class="d-flex justify-content-center">
+    <button type="button" class="btn btn-primary" align="center" onclick="solveMaze()">Solve Maze</button>
+</div>
+
+<br />
+
+<p>
+    @{ double timeToGenerateMilliseconds = Model.TimeToGenerateTicks / 10000.0; }
+    <i>Time to generate maze: @timeToGenerateMilliseconds milliseconds</i>
+</p>
+
+<p id="timeToSolve" class="d-none">
+    @{ double timeToSolveMilliseconds = Model.TimeToSolveTicks / 10000.0; }
+    <i>Time to solve maze: @timeToSolveMilliseconds milliseconds</i>
+</p>
+
+<canvas id="maze" width=@(Model.Length * 100) height=@(Model.Width * 100) style="border:1px solid #000000;" />
+
+<script>
+    var canvas = document.getElementById("maze");
+    var ctx = canvas.getContext("2d");
+
+    @{
+        int x = 0;
+        int y = Model.Length * 100;
+
+        for (int i = 0; i < Model.Length; i++)
+        {
+            x = 0;
+            y -= 100;
+            @Html.Raw($"ctx.moveTo({x}, {y});");
+
+            var row = Model.Grid[i];
+
+            for (int j = 0; j < Model.Width; j++)
+            {
+                var cell = row[j];
+
+                // Draw North
+                x += 100;
+                if (cell.North)
+                {
+                    @Html.Raw($"ctx.lineTo({x}, {y});");
+                }
+                else
+                {
+                    @Html.Raw($"ctx.moveTo({x}, {y});");
+                }
+
+                // Draw East
+                y += 100;
+                if (cell.East)
+                {
+                    @Html.Raw($"ctx.lineTo({x}, {y});");
+                }
+                else
+                {
+                    @Html.Raw($"ctx.moveTo({x}, {y});");
+                }
+                y -= 100;
+                @Html.Raw($"ctx.moveTo({x}, {y});");
+            }
+        }
+
+        @Html.Raw("ctx.stroke();");
+    }
+</script>
+
+

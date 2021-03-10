@@ -21,8 +21,10 @@ namespace RobbiesMazes.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
         {
+            ViewData["Title"] = "About";
+
             return View();
         }
 
