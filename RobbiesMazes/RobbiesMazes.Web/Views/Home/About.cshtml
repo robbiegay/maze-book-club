@@ -2,15 +2,49 @@
 
 <p>The purpose of this site is to display the Mazes I will be building as I read through <a href="https://pragprog.com/titles/jbmaze/mazes-for-programmers/" target="_blank">Mazes for Programmers</a>.</p>
 
-<p>I have the following learning objectives as I work through "Mazes":</p>
+<p>Below are some weekly updates as I work through the book and meet with Luke and John for our book club meetings.</p>
 
-<ul>
-    <li>
-        Build a Mazes web app using .NET Framework, Razor pages, and MVC 5. Complete a <a href="https://app.pluralsight.com/library/courses/asp-net-mvc5-web-apps/table-of-contents">MVC 5 Pluralsight course</a>.
-        <ul>
-            <li>After week 1, I received feedback that I should port my Mazes web app from .NET Framework to .NET Core. The <a href="https://mazecreator.azurewebsites.net">.NET Framework site</a> is still hosted and you are currently reading this on the new .NET Core site! This learning goal has transitioned to using .NET Core.</li>
-        </ul>
-    </li>
-    <li>Try to apply <a href="https://en.wikipedia.org/wiki/SOLID">SOLID principles</a>. Get feedback from other book club members on how well I am implementing SOLID principles. Learn from code reviewing other book club members' code.</li>
-    <li>Work through the "Mazes" book, learning more about algorithms and creating some awesome mazes!</li>
-</ul>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Week</th>
+            <th scope="col">Update</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>
+                <p>
+                    During the first week of our "Maze" book club, we read chapter one and created our own implementations
+                    of the Binary Tree and Sidewinder maze building algorithms.
+                </p>
+                <p>
+                    I set the following goals for the maze building project:
+                    <ul>
+                        <li>Build a Mazes web app using .NET Framework, Razor pages, and MVC 5. Complete a <a href="https://app.pluralsight.com/library/courses/asp-net-mvc5-web-apps/table-of-contents">MVC 5 Pluralsight course</a>.</li>
+                        <li>Try to apply <a href="https://en.wikipedia.org/wiki/SOLID">SOLID principles</a>. Get feedback from other book club members on how well I am implementing SOLID principles. Learn from code reviewing other book club members' code.</li>
+                        <li>Work through the "Mazes" book, learning more about algorithms and creating some awesome mazes!</li>
+                    </ul>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>
+                <p>
+                    An initial goal going into this project was to host the mazes in a ASP.NET Framework MVC web app. After week one,
+                    I received feedback that I should port my site over to an ASP.NET Core app, as .NET Framework is depreciated. You can
+                    find my .NET Framework maze site <a href="https://mazecreator.azurewebsites.net">here</a>. The site you are currently reading
+                    this on is built using .NET Core!
+                </p>
+                <p>
+                    This week I wrote a maze solving algorithm to solve the binary tree and sidewinder algorithms. The algorithm solves the
+                    maze by hugging the left-hand wall, as in a 'perfect' maze, this will lead you to the exit. As you can tell my running the
+                    solver a few times, it is not the most efficient, as it sometimes will explore close to 50% of the maze before finding the
+                    exit.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
