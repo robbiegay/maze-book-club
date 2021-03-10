@@ -8,9 +8,12 @@ namespace RobbiesMazes.Data.Models
         public int Width { get; set; }
         public List<List<Cell>> Grid { get; set; }
         public List<Direction> Solution { get; set; }
+        public long TimeToGenerateTicks { get; set; }
+        public long TimeToSolveTicks { get; set; }
 
         public Maze(int length, int width)
         {
+            TimeToGenerateTicks = -1;
             var grid = new List<List<Cell>>();
 
             Length = length;

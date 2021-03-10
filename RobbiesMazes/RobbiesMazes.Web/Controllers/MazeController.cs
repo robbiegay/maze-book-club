@@ -21,7 +21,14 @@ namespace RobbiesMazes.Web.Controllers
             ViewData["Message"] = ""
                 + "<p>A plain, 4x4 grid. Shows the default state of the Maze Builder - before any North or East walls are carved away.</p>";
 
+            // Start timer
+            var mazeTimer = new AlgorithmTimer();
+            mazeTimer.Start();
+            // Build maze
             var Model = new Maze(4, 4);
+            // Stop timer and add time value to model
+            mazeTimer.Stop();
+            Model.TimeToGenerateTicks = mazeTimer.ElapsedTimeTicks();
             Model.Solution = new List<Direction>();
 
             return View("Maze", Model);
@@ -43,10 +50,25 @@ namespace RobbiesMazes.Web.Controllers
                 + "<p>Since each cell is visited only once, this maze building algorithm has a time complexity of O(n) - linear time.</p>"
                 + "<p>The maze is dynamically generated. Refresh the page to generate a new maze.</p>";
 
+            // Start timer
+            var mazeTimer = new AlgorithmTimer();
+            mazeTimer.Start();
+            // Build maze
             var mazeBuilder = new BinaryTree();
             var Model = mazeBuilder.BuildMaze(12, 12);
+            // Stop timer and add time value to model
+            mazeTimer.Stop();
+            Model.TimeToGenerateTicks = mazeTimer.ElapsedTimeTicks();
+
+            // Start timer
+            var solutionTimer = new AlgorithmTimer();
+            solutionTimer.Start();
+            // Solve maze
             var mazeSolver = new MazeSolver();
             Model.Solution = mazeSolver.Solve(Model);
+            // Stop timer and add time value to model
+            solutionTimer.Stop();
+            Model.TimeToSolveTicks = solutionTimer.ElapsedTimeTicks();
 
             return View("Maze", Model);
         }
@@ -67,10 +89,25 @@ namespace RobbiesMazes.Web.Controllers
                 + "<p>Since each cell is visited only once, this maze building algorithm has a time complexity of O(n) - linear time.</p>"
                 + "<p>The maze is dynamically generated. Refresh the page to generate a new maze.</p>";
 
+            // Start timer
+            var mazeTimer = new AlgorithmTimer();
+            mazeTimer.Start();
+            // Build maze
             var mazeBuilder = new Sidewinder();
             var Model = mazeBuilder.BuildMaze(12, 12);
+            // Stop timer and add time value to model
+            mazeTimer.Stop();
+            Model.TimeToGenerateTicks = mazeTimer.ElapsedTimeTicks();
+
+            // Start timer
+            var solutionTimer = new AlgorithmTimer();
+            solutionTimer.Start();
+            // Solve maze
             var mazeSolver = new MazeSolver();
             Model.Solution = mazeSolver.Solve(Model);
+            // Stop timer and add time value to model
+            solutionTimer.Stop();
+            Model.TimeToSolveTicks = solutionTimer.ElapsedTimeTicks();
 
             return View("Maze", Model);
         }
