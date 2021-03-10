@@ -39,10 +39,15 @@
                     this on is built using .NET Core!
                 </p>
                 <p>
-                    This week I wrote a maze solving algorithm to solve the binary tree and sidewinder algorithms. The algorithm solves the
-                    maze by hugging the left-hand wall, as in a 'perfect' maze, this will lead you to the exit. As you can tell my running the
-                    solver a few times, it is not the most efficient, as it sometimes will explore close to 50% of the maze before finding the
+                    This week I wrote a maze solving algorithm to solve the binary tree and sidewinder mazes. The algorithm solves the
+                    maze by hugging the left-hand wall. In a 'perfect' maze, this will lead you to the exit eventually. As you can tell by running the
+                    maze solver a few times, it is not always the most efficient; It will sometimes explore close to 50% of the maze before finding the
                     exit.
+                </p>
+                <p>
+                    I added a timer class that provides some metrics on how quickly my maze generation and maze solving algorithms take to run. 
+                    I initially hide the timer value for solving the maze, as I don't think this should be displayed until the 'Solve Maze' 
+                    button is clicked.
                 </p>
                 <p>
                     I worked on adding some Unit Tests to my project. I read some documentation on 
@@ -51,18 +56,18 @@
                     on <a href="https://app.pluralsight.com/library/courses/csharp-test-driven-development/table-of-contents">Test Driven Development (TDD)</a>. 
                     The test driven development process follows the following cycle when adding a new feature: Red - Green - Refactor. This means that 
                     for each new feature, you write a test for the feature that will fail (Red). You then write the minimum amount of code to get 
-                    the test to pass (Green). This can be as minimal as returning a hard coded value. You then refactor the code to flesh out the feature. 
+                    the test to pass (Green). This can be as minimal as returning a hard-coded value. You then refactor the code to flesh out the feature. 
                     The advantage of this is that you can quickly run the unit test during the development process to check if your feature is operational.
                 </p>
                 <p>
                     Chapter 2 covered implementing the binary tree and sidewinder algorithms and displaying your maze visually. The book
-                    explains how to display your maze using ASCII Art and rendering it to an image. Since I am rendering my mazes using the
-                    Canvas HTML element, I did not implement that section of the reading.
+                    explains how to display your maze using ASCII Art and rendering it as an image. Since I am rendering my mazes using the
+                    HTML <a href="https://www.w3schools.com/html/html5_canvas.asp">Canvas</a> element, I did not implement this section of the reading.
                 </p>
                 <p>
-                    The book implemented their mazes using a Cell class that keeps a reference to each of its North, South, East, and West 
-                    neighbors. I used a 2-D List and check on each cell's neighbors by checking on the adjacent cells. I may try to implement their 
-                    solution over this upcoming week.
+                    The book implemented its maze using a Cell class that keeps a reference to each of its North, South, East, and West 
+                    neighbors. I used a 2-D List and check on each cell's neighbors by looking at the adjacent cells. I may try to implement their 
+                    solution over this upcoming week as I think it has several advantages.
                 </p>
             </td>
         </tr>
